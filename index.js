@@ -1,6 +1,6 @@
-const { Pull, Push, HEADERBYTES, KEYBYTES, ABYTES } = require('../sodium-secretstream')
+const { Pull, Push, HEADERBYTES, KEYBYTES, ABYTES } = require('sodium-secretstream')
 const sodium = require('sodium-universal')
-const crypto = require('../spacecore-crypto')
+const crypto = require('spacecore-crypto')
 const { Duplex, Writable, getStreamError } = require('streamx')
 const b4a = require('b4a')
 const Timeout = require('timeout-refresh')
@@ -9,7 +9,7 @@ const Bridge = require('./lib/bridge')
 const Handshake = require('./lib/handshake')
 
 const IDHEADERBYTES = HEADERBYTES + 32
-const [NS_INITIATOR, NS_RESPONDER, NS_SEND] = crypto.namespace('../spaceswarm-secret-stream', 3)
+const [NS_INITIATOR, NS_RESPONDER, NS_SEND] = crypto.namespace('spaceswarm-secret-stream', 3)
 const MAX_ATOMIC_WRITE = 256 * 256 * 256 - 1
 
 module.exports = class NoiseSecretStream extends Duplex {

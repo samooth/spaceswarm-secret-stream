@@ -13,7 +13,7 @@ npm install spaceswarm-secret-stream
 You can either make a secret stream from an existing transport stream.
 
 ``` js
-const SecretStream = require('../spaceswarm-secret-stream')
+const SecretStream = require('spaceswarm-secret-stream')
 
 const a = new SecretStream(true, tcpClientStream)
 const b = new SecretStream(false, tcpServerStream)
