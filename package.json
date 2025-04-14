@@ -1,6 +1,6 @@
 {
-  "name": "@hyperswarm/secret-stream",
-  "version": "6.7.1",
+  "name": "spaceswarm-secret-stream",
+  "version": "0.0.1",
   "description": "Secret stream backed by Noise and libsodium's secretstream",
   "main": "index.js",
   "files": [
@@ -9,10 +9,8 @@
   ],
   "dependencies": {
     "b4a": "^1.1.0",
-    "hypercore-crypto": "^3.3.1",
     "noise-curve-ed": "^2.0.1",
     "noise-handshake": "^3.0.2",
-    "sodium-secretstream": "^1.1.0",
     "sodium-universal": "^4.0.0",
     "streamx": "^2.14.0",
     "timeout-refresh": "^2.0.0",
@@ -28,12 +26,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/holepunchto/hyperswarm-secret-stream.git"
+    "url": "https://github.com/samooth/spaceswarm-secret-stream.git"
   },
   "author": "Mathias Buus (@mafintosh)",
+  "contributors" : [
+    {
+      "name" : "Tomás Díaz",
+      "email" : "tomas@bsv.direct",
+      "url" : "https://github.com/samooth"
+    }
+  ],  
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/holepunchto/hyperswarm-secret-stream/issues"
+    "url": "https://github.com/samooth/spaceswarm-secret-stream/issues"
   },
-  "homepage": "https://github.com/holepunchto/hyperswarm-secret-stream"
+  "homepage": "https://github.com/samooth/spaceswarm-secret-stream"
 }

@@ -1,11 +1,11 @@
-# @hyperswarm/secret-stream
+# spaceswarm-secret-stream
 
-### [See the full API docs at docs.holepunch.to](https://docs.holepunch.to/building-blocks/hyperswarm#secretstream)
+### [See the full API docs at docs.space.bsv.direct](https://docs.space.bsv.direct/building-blocks/spaceswarm#secretstream)
 
 Secret stream backed by Noise and libsodium's secretstream
 
 ```
-npm install @hyperswarm/secret-stream
+npm install spaceswarm-secret-stream
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install @hyperswarm/secret-stream
 You can either make a secret stream from an existing transport stream.
 
 ``` js
-const SecretStream = require('@hyperswarm/secret-stream')
+const SecretStream = require('../spaceswarm-secret-stream')
 
 const a = new SecretStream(true, tcpClientStream)
 const b = new SecretStream(false, tcpServerStream)
@@ -139,7 +139,7 @@ It is safe to write to the stream immediately though, as data is buffered
 internally before the handshake has been completed.
 
 #### `await s.send(buffer)`
-Sends an encrypted unordered message, see [udx-native](https://github.com/holepunchto/udx-native/tree/main?tab=readme-ov-file#await-streamsendbuffer) for details.  
+Sends an encrypted unordered message, see [udx-native](https://github.com/samooth/udx-native/tree/main?tab=readme-ov-file#await-streamsendbuffer) for details.  
 This method with silently fail if called before handshake is complete or if the underlying rawStream is not an UDX-stream (not capable of UDP).
 
 #### `s.trySend(buffer)`
