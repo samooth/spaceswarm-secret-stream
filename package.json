@@ -35,7 +35,7 @@
       "email" : "tomas@bsv.direct",
       "url" : "https://github.com/samooth"
     }
-  ],  
+  ],
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/samooth/spaceswarm-secret-stream/issues"
