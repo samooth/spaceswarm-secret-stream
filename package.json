@@ -1,6 +1,6 @@
 {
   "name": "spaceswarm-secret-stream",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Secret stream backed by Noise and libsodium's secretstream",
   "main": "index.js",
   "files": [
@@ -30,11 +30,11 @@
     "url": "https://github.com/samooth/spaceswarm-secret-stream.git"
   },
   "author": "Mathias Buus (@mafintosh)",
-  "contributors" : [
+  "contributors": [
     {
-      "name" : "Tomás Díaz",
-      "email" : "tomas@bsv.direct",
-      "url" : "https://github.com/samooth"
+      "name": "Tomás Díaz",
+      "email": "tomas@bsv.direct",
+      "url": "https://github.com/samooth"
     }
   ],
   "license": "Apache-2.0",
